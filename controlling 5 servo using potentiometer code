@@ -1,0 +1,59 @@
+#include <Servo.h>;
+Servo mservo;
+Servo mservo1;
+Servo mservo2;
+Servo mservo3;
+Servo mservo4;
+
+int s;
+int s1;
+int s2;
+int s3;
+int s4;
+
+
+void setup() {
+  
+ 
+  pinMode(3, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
+  
+  pinMode(A1, INPUT);
+  pinMode(A2, INPUT);
+  pinMode(A3, INPUT);
+  pinMode(A4, INPUT);
+  pinMode(A5, INPUT);
+  
+  mservo.attach(3);
+  mservo1.attach(5);
+  mservo2.attach(6);
+  mservo3.attach(10);
+  mservo4.attach(11);
+
+}
+
+void loop() {
+   
+  s  = analogRead(A1);
+  s1 = analogRead(A2);
+  s2 = analogRead(A3);
+  s3 = analogRead(A4);
+  s4 = analogRead(A5);
+  
+  s = map(s, 0, 1023, 0, 180);
+  s1 = map(s1, 0, 1023, 0, 180);
+  s2 = map(s2, 0, 1023, 0, 180);
+  s3 = map(s3, 0, 1023, 0, 180);
+  s4 = map(s4, 0, 1023, 0, 180);
+    
+  mservo.write(s);
+  mservo1.write(s1);
+  mservo2.write(s2);
+  mservo3.write(s3);
+  mservo4.write(s4);
+  
+  delay(15);
+}
