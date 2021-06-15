@@ -23,7 +23,6 @@ void setup() {
  
 }
 
-
 void loop() {
   mservo.write(90);
   mservo1.write(90);
