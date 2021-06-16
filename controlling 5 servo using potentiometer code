@@ -8,11 +8,11 @@ Servo mservo3;
 Servo mservo4;
 
 // defining variable for the input pin and to store the input value
-int s;   int potinput = A1;
-int s1;  int potinput1 = A2;
-int s2; int potinput2 = A3;
-int s3; int potinput3 = A4;
-int s4; int potinput4 = A5;
+int s;     int potinput = A1;
+int s1;    int potinput1 = A2;
+int s2;    int potinput2 = A3;
+int s3;    int potinput3 = A4;
+int s4;    int potinput4 = A5;
 
 // define the output pin numbers
 int servpin = 3;
@@ -65,3 +65,5 @@ void loop() {
   // small delay for the servo movment
   delay(15);
 }
+
+//wrote by abdulrahman Eidhah owayj
