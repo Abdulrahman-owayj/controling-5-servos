@@ -40,6 +40,8 @@ void loop() {
 
 Here i used 5 varibale resistances to controll 5 servos using the arduino as a controller, you can see picture of the circuit diagram provided in this repositry and asee the code attached below (make sure to have the servo library installed)
 
+Link for tinkercard project : https://www.tinkercad.com/things/dPAHhonEyF1-editing-components/editel?lessonid=EFU6PEHIXGFUR1J&projectid=OIYJ88OJ3OPN3EA&collectionid=OIYJ88OJ3OPN3EA&tenant=circuits
+
 ```ruby
 #include <Servo.h>; 
 
